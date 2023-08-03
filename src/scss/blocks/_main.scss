@@ -1,0 +1,144 @@
+.main {
+    background-color: $black;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4.5em 0 2em;
+}
+
+
+.main__title {
+    font-weight: 700;
+    color: $white;
+    line-height: 1.2em;
+    max-width: 800px;
+    margin-bottom: 0.4em;
+}
+
+
+.main__subtitle {
+    max-width: 520px;
+    margin-bottom: 2em;
+    color: $white;
+}
+
+#uploadFile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload, .download__image {  
+    background-color: $grey;
+    border-radius: 20px;
+    width: 70%;
+    position: relative;
+
+    @include mobile {
+        width: 100%;
+    }
+} 
+
+.upload {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border: 2px dashed $white;
+    position: relative;
+}
+
+.upload__title {
+    font-family: $title;
+    font-weight: 600;
+    @include adaptiv-font(25, 20);
+    margin-bottom: 1em;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.upload__btn, .dwnl__btn {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.upload__btn {
+    margin-bottom: 1em;
+}
+
+
+.upload__img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-bottom: 1em;
+}
+
+
+.try__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7em;
+    justify-content: center;
+}
+
+.try__arrow {
+    height: 11px;
+}
+
+.try__arrow-down {
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+
+
+.example__img {
+    display: inline;
+    max-width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+        margin-right: 0.7em;
+    }
+}
+
+
+.download__image {
+    padding: 1em;
+    padding-top: 2em;
+}
+
+#closeDwnlImage {
+    background-color: $white;
+}
+
+.dwnl-text__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin: -80px 0 40px;
+    font-family: $title;
+    font-weight: 600;
+    @include adaptiv-font(25, 20);
+}
+
+
+.dwnl-text--active {
+    color: $green;
+    border-bottom: 2px solid $green;
+}
+
+.download__img {
+    margin-bottom: 1.5em;
+}
+

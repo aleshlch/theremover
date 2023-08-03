@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'icons';
+    src:  url('../fonts/icons/icons.eot?wsc1aw');
+    src:  url('../fonts/icons/icons.eot?wsc1aw#iefix') format('embedded-opentype'),
+      url('../fonts/icons/icons.ttf?wsc1aw') format('truetype'),
+      url('../fonts/icons/icons.woff?wsc1aw') format('woff'),
+      url('../fonts/icons/icons.svg?wsc1aw#icons') format('svg');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"]::before, [class*=" icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-mail:before {
+    content: "\e902";
+  }
+  .icon-location:before {
+    content: "\e900";
+  }
+  .icon-phone:before {
+    content: "\e901";
+  }

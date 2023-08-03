@@ -1,0 +1,50 @@
+.rewievs {
+    background-color: $green;
+    padding: 1.5em 0 2.5em;
+}
+
+.rewievs__title {
+    margin-bottom: 0.2em;
+}
+
+.rewievs__subtitle {
+    max-width: 700px;
+    margin: 0 auto 2.5;
+    text-align: center;
+    margin: 0 auto 1.5em;
+}
+
+.cart__decor-rewievs {
+    @include adaptiv-font(70, 50);
+    line-height: 0.6em;
+}
+
+.cart__text-rewievs {
+    margin-bottom: 3.5em;
+}
+
+
+.user {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 15px;
+}
+
+.user__img {
+    height: 50px;
+    width: 50px;
+    background-color: $green;
+    border-radius: 50px;
+    margin-right: 0.5em;
+}
+
+.user__name {
+    font-weight: 600;
+}
+
+
+.user__activity {
+    @include adaptiv-font(16, 12);
+}

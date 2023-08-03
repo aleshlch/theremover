@@ -1,0 +1,1 @@
+export const serverPath = 'https://substantial-striped-fukuiraptor.glitch.me/'

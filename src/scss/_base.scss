@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Chesna Grotesk';
+    src: url("../fonts/ChesnaGrotesk/chesnagrotesk-book.otf");
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Chesna Grotesk';
+    src: url("../fonts/ChesnaGrotesk/chesnagrotesk-medium.otf");
+}
+
+@font-face {
+    font-weight: 600;
+    font-family: 'Chesna Grotesk';
+    src: url("../fonts/ChesnaGrotesk/chesnagrotesk-semibold.otf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Chesna Grotesk';
+    src: url("../fonts/ChesnaGrotesk/chesnagrotesk-bold.otf");
+}
+
+body {
+    font-family: 'Inter';
+    font-weight: 400;
+    @include adaptiv-font(20, 14);
+    color: $white;
+
+    .scroll-lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: $title;
+    font-weight: 600;
+    @include adaptiv-font(40, 28);
+    text-align: center;
+    color: $black;
+}
+
+.subtitle {
+    opacity: 80%;
+    text-align: center;
+    color: $black;
+}
+
+.none {
+    display: none !important;
+}
+
+.logo {
+    font-family: $title;
+    font-weight: 600;
+}
+
+.logo-span {
+    font-weight: 400;
+}
+
+.btn {
+    background: $green;
+    border-radius: 10px;
+    color: $black;
+    padding: 0.8em 1.5em;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+        background: rgba($green, 0.6);
+    }
+}
+
+.carts {
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include tablet {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+.cart {
+    background-color: $black;
+    padding: 1.5em;
+    border-radius: 15px;
+    position: relative;
+    max-width: 400px;
+}
+
+.disaled {
+    opacity: 50%;
+}
+
+.close-btn::before, 
+.close-btn::after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 26px;
+    height: 3px;
+    background-color: inherit;
+}
+
+
+.close-btn::before {
+    transform: rotate(45deg);
+
+}
+
+.close-btn::after {
+    transform: rotate(-45deg);
+}
